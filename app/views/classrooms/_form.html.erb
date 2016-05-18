@@ -12,12 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :student %><br>
+    <%= f.label "Estudante" %><br>
     <%= f.collection_select(:student_id, Student.all, :id, :name, { :prompt => 'Selecione um Estudante' }) %>
   </div>
   
   <div class="field">
-    <%= f.label :course %><br>
+    <%= f.label "Curso" %><br>
     <%= f.collection_select(:course_id, Course.all, :id, :name, { :prompt => 'Selecione um Curso' }) %>
   </div>
 

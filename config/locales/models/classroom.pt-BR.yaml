@@ -1,0 +1,11 @@
+pt-BR:
+  activerecord:
+    models:
+      classroom:
+        one: Turma
+        other: Turmas
+    attributes:
+      classroom:
+        student_id: Estudante
+        course_id: Curso
+        
