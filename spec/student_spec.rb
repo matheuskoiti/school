@@ -1,6 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Student, type: :model do
-  it "" do
-  end
+	it "" do
+	end
 end

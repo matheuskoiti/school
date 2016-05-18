@@ -1,5 +1,7 @@
-<h1>New student</h1>
+<%= content_for :stylesheet, stylesheet_link_tag("default") %>
+
+<h1>Criar estudante</h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Back', students_path %>
+<%= link_to 'Voltar', students_path %>
