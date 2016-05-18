@@ -4,7 +4,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.7'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 #gem 'rspec-rails', '~> 3.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -29,7 +28,12 @@ gem 'spring',        group: :development
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.4'
+  gem 'sqlite3'
   gem 'shoulda-matchers', '~> 3.1'
+end
+
+group :production, :test do
+  gem 'pg'
 end
 
 gem 'guard-rspec', require: false

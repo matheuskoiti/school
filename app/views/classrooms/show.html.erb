@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Estudante:</strong>
+  <%= Student.find(@classroom.student_id).name %>
+</p>
+
+<p>
+  <strong>Curso:</strong>
+  <%= Course.find(@classroom.course_id).name %>
+</p>
+
+
+<p>
+  <strong>Criada em:</strong>
+  <%= @classroom.created_at %>
+</p>
+
+<%= link_to 'Voltar', classrooms_path %>

@@ -1,0 +1,27 @@
+<h1>Lista de matriculas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Estudante</th>
+      <th>Curso</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @classrooms.each do |classroom| %>
+      <tr>
+        <td><%= Student.find(classroom.student_id).name %></td>
+        <td><%= Course.find(classroom.course_id).name %></td>
+        <td><%= link_to 'Show', classroom %></td>
+        <td><%= link_to 'Remover', classroom, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nova matrícula', new_classroom_path %>
+

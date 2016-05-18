@@ -1,0 +1,27 @@
+<%= form_for(@classroom) do |f| %>
+  <% if @classroom.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@classroom.errors.count, "error") %> prohibited this classroom from being saved:</h2>
+
+      <ul>
+      <% @classroom.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :student %><br>
+    <%= f.collection_select(:student_id, Student.all, :id, :name, { :prompt => 'Selecione um Estudante' }) %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :course %><br>
+    <%= f.collection_select(:course_id, Course.all, :id, :name, { :prompt => 'Selecione um Curso' }) %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Cadastrar" %>
+  </div>
+<% end %>
