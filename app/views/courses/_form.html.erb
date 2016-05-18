@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :status %><br>
-    <%= f.number_field :status %>
+    <%= f.select :status, options_for_select(AttributeStatus.list.each, :to_s) %>    
   </div>
   <div class="field">
     <%= f.label :name %><br>
