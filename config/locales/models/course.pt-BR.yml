@@ -1,0 +1,12 @@
+pt-BR:
+  activerecord:
+    models:
+      course:
+        one: Estudante
+        other: Estudantes
+    attributes:
+      course:
+        status: Estado
+        name: Nome
+        description: Descrição
+        
