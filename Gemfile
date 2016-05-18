@@ -36,6 +36,7 @@ gem 'guard-rspec', require: false
 gem 'factory_girl_rails'
 gem "responders"
 gem 'enumerate_it'
+gem "slim-rails"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
