@@ -6,10 +6,17 @@ body {
   line-height: 18px;
 }
 
+table {
+  border-collapse: separate;
+  border-spacing: 50px 0;
+  margin-top: 50px;
+}
+
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 25px;
+  padding: 10px 0;
 }
 
 pre {
@@ -20,6 +27,7 @@ pre {
 
 a {
   color: #000;
+  margin-left: 30px;
   &:visited {
     color: #666;
   }
@@ -66,4 +74,8 @@ div {
     font-size: 12px;
     list-style: square;
   }
+}
+
+.title {
+  margin-right: 50px;
 }
