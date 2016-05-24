@@ -54,7 +54,7 @@ feature "Student", type: :feature do
 
       it 'shows a student', js: true do
         # FactoryGirl default values
-        expect(page).to have_content("Teste")
+        expect(page).to have_content("Estudante")
         expect(page).to have_content("Active")
         expect(page).to have_content("1")
       end

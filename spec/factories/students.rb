@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :student do
-    name "Teste"
+    name "Estudante"
     status 1
     register_number 1
   end

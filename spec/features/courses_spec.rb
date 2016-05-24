@@ -54,8 +54,8 @@ feature "Course", type: :feature do
 
       it 'shows a course', js: true do
         # FactoryGirl default values
-        expect(page).to have_content("MyString")
-        expect(page).to have_content("MyString")
+        expect(page).to have_content("Curso")
+        expect(page).to have_content("Descricao")
         expect(page).to have_content("Active")
       end
     end

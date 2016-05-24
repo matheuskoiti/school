@@ -12,8 +12,8 @@
   <tbody>
     <% @classrooms.each do |classroom| %>
       <tr>
-        <td><%= Student.find(classroom.student_id).name %></td>
-        <td><%= Course.find(classroom.course_id).name %></td>
+        <td><%= classroom.student_name %></td>
+        <td><%= classroom.course_name %></td>
         <td><%= link_to 'Show', classroom %></td>
         <td><%= link_to 'Remover', classroom, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
       </tr>
