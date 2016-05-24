@@ -41,6 +41,7 @@ gem "responders"
 gem 'enumerate_it'
 gem "slim-rails"
 gem 'capybara'
+gem 'selenium-webdriver'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
