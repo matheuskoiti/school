@@ -1,12 +1,12 @@
 class Student < ActiveRecord::Base
-	extend EnumerateIt
+  extend EnumerateIt
   	
-  	has_enumeration_for :status, with: AttributeStatus
+  has_enumeration_for :status, with: AttributeStatus
 
-	has_many :classrooms
-  	has_many :courses, through: :classrooms
+  has_many :classrooms
+  has_many :courses, through: :classrooms
 
-	validates :name, presence: true
-  	validates :register_number, presence: true
-  	validates :status, presence: true
+  validates :name, presence: true
+  validates :register_number, presence: true
+  validates :status, presence: true
 end

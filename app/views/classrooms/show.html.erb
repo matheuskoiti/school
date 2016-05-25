@@ -2,12 +2,12 @@
 
 <p>
   <strong>Estudante:</strong>
-  <%= Student.find(@classroom.student_id).name %>
+  <%= @classroom.student_name %>
 </p>
 
 <p>
   <strong>Curso:</strong>
-  <%= Course.find(@classroom.course_id).name %>
+  <%= @classroom.course_name %>
 </p>
 
 
